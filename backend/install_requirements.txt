@@ -1,0 +1,7 @@
+create --name translate_app python=3.11 -y
+conda activate translate_app
+set KMP_DUPLICATE_LIB_OK=TRUE
+conda install -c pytorch torchdata=0.5.1
+conda install -c conda-forge portalocker=2.7.0
+conda install -c pytorch torchtext=0.16.0
+cd projects\translation_app\backend
